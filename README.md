@@ -8,14 +8,8 @@ TechSuggest is an AI-powered chatbot integrated into a Facebook Page Messenger. 
 
 ## Workflow
 1.	Users start by interacting with the Choose Category button.
-2.	They select from three main device categories:
-o	Phone
-o	Laptop
-o	Tablet
-3.	The chatbot asks additional questions based on:
-o	Primary use case (e.g., gaming, work, study, etc.)
-o	Screen size preference
-o	Other relevant preferences
+2.	They select from three main device categories: Phone, Laptop, Tablet
+3.	The chatbot asks additional questions based on:	Primary use case (e.g., gaming, work, study, etc.),	Screen size preference,	Other relevant preferences
 4.	The collected user inputs are sent to the Google Gemini 2.0 Flash API.
 5.	The AI processes the data and returns a personalized device recommendation.
 
