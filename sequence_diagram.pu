@@ -1,0 +1,11 @@
+@startuml TechSuggest
+    "Facebook App" -> "Facebook App" : Generate Token
+    "Facebook App" -> "Web Server" : Store Token in environment variable
+    "Web Server" --> "Facebook App" : Configure webhook with URL and token
+    "Facebook Messenger" --> "Facebook App" : User's Message
+    "Facebook App" -> "Web Server" : POST user's message via webhook
+    "Web Server" -> "Google Gemini" : Sent user's message
+    "Google Gemini" --> "Web Server" : Get result
+    "Web Server" --> "Facebook App" : Sent result message via Graph API
+    "Facebook App" -> "Facebook Messenger" : Sent result to the corresponding user
+@enduml
